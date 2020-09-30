@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToActivity1"
+        android:text="Layout 1"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 2"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goToActivity2"
+        />
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 3"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goToActivity3"
+        />
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 4"
+        app:layout_constraintTop_toBottomOf="@+id/three"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goToActivity4"
+        />
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 5"
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goToActivity5"
+        />
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 6"
+        app:layout_constraintTop_toBottomOf="@+id/five"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goToActivity6"
+        />
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout 7"
+        app:layout_constraintTop_toBottomOf="@+id/six"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goToActivity7"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
